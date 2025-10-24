@@ -1,4 +1,4 @@
-import "../styles/shop.css";
+import "../styles/shop.scss";
 
 function ColorFilter({ colors, handleColors }) {
   return (

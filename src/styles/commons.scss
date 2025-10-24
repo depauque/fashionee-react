@@ -1,0 +1,136 @@
+@import "./variables";
+
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+
+  .input {
+    border: none;
+    border-bottom: 1px solid rgba(68, 68, 68, 0.2);
+    width: 100%;
+    color: rgba(68, 68, 68, 0.5);
+    outline: none;
+    padding: 0 0 15px 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .button-wrapper {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    max-width: 240px;
+    width: 100%;
+    cursor: pointer;
+
+    .button {
+      color: $white;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 16px;
+      border: none;
+      background: $black;
+      padding: 17px 74px;
+      cursor: pointer;
+      width: 100%;
+      text-align: center;
+    }
+
+    .vertical-line {
+      width: 2px;
+      height: 50px;
+      background: $black;
+    }
+  }
+
+  .price {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+    .current-price {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+
+    .old-price {
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      text-decoration: line-through;
+      line-height: 100%;
+      color: #444;
+    }
+  }
+
+  .custom-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    li {
+      color: #444;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 27px;
+
+      &.active {
+        color: $pink;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        width: 5px;
+        height: 5px;
+        background-image: url("../assets/icons/square.svg");
+      }
+    }
+  }
+
+  .find-us {
+    .find-us-text {
+      margin: 0 0 20px 0;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 170%;
+    }
+
+    .find-us-links {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      .find-us-link a {
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 100%;
+        color: #444;
+      }
+
+      .line {
+        border-bottom: 1px solid #444;
+        height: 1px;
+        width: 10px;
+      }
+    }
+  }
+}
+
+img.dotted {
+  opacity: 0.5;
+}

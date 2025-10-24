@@ -1,4 +1,4 @@
-import "../styles/footer.css";
+import "../styles/footer.scss";
 
 import logo from "../assets/icons/logo.svg";
 import dottedBg130 from "../assets/images/dotted-background_130x130.svg";

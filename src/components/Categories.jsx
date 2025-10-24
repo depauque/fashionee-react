@@ -1,4 +1,4 @@
-import "../styles/shop.css";
+import "../styles/shop.scss";
 
 function Categories({ categories, activeCategory, setActiveCategory }) {
   return (

@@ -3,7 +3,7 @@ import { useContext } from "react";
 
 import AuthContext from "./AuthContext";
 
-import "../styles/header.css";
+import "../styles/header.scss";
 
 import logo from "../assets/icons/logo.svg";
 import arrow from "../assets/icons/arrow.svg";

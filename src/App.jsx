@@ -9,16 +9,15 @@ import Header from "./components/Header";
 import ContentBlock from "./components/ContentBlock";
 import Footer from "./components/Footer";
 
-import "./styles/reset.css";
-import "./styles/commons.css";
+import "./styles/reset.scss";
+import "./styles/commons.scss";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState(
-    window.location.pathname === "/fashionee-react/"
-      ? "Home"
-      : window.location.pathname.slice(1).charAt(0).toUpperCase() +
-          window.location.pathname.slice(2)
-  );
+  const [currentPage, setCurrentPage] = useState(() => {
+    const path = window.location.pathname.replace("/fashionee-react", "");
+    const pageName = path === "/" ? "home" : path.slice(1);
+    return pageName.charAt(0).toUpperCase() + pageName.slice(1);
+  });
 
   const [favorites, setFavorites] = useState(() => {
     const stored = JSON.parse(localStorage.getItem("favorites"));

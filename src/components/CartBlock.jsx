@@ -1,9 +1,9 @@
-import "../styles/cart.css";
+import { useEffect, useState, useRef } from "react";
 import data from "../products.json";
 import CartProduct from "./CartProduct";
 
 import buttonArrow from "../assets/icons/button-arrow.svg";
-import { useEffect, useState, useRef } from "react";
+import "../styles/cart.scss";
 
 function CartBlock({ cart, handleCart, counter }) {
   const [orderPrice, setOrderPrice] = useState(0);

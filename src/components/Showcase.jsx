@@ -13,7 +13,7 @@ import Sort from "./Sort";
 
 import seasonSaleBanner from "../assets/images/season-sale-banner.svg";
 
-import "../styles/shop.css";
+import "../styles/shop.scss";
 
 const SEARCH_DELAY = 800;
 const ITEMS_PER_PAGE = 9;

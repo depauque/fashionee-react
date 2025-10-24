@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../styles/content-block.css";
+import "../styles/content-block.scss";
 import dottedBg322 from "../assets/images/dotted-background_322x354.svg";
 
 function ContentBlock(props) {

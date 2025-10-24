@@ -1,4 +1,4 @@
-import "../styles/newsletter.css";
+import "../styles/newsletter.scss";
 
 import dottedBg130 from "../assets/images/dotted-background_130x130.svg";
 

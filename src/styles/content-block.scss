@@ -1,0 +1,84 @@
+@import "./variables";
+
+.header-menu-2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 150px;
+  margin-bottom: 200px;
+
+  .header-img {
+    max-width: 800px;
+    width: 100%;
+    height: 400px;
+    background: #f1f2f3;
+    margin-top: 50px;
+    margin-right: 120px;
+  }
+
+  .menu-wrapper {
+    max-width: 850px;
+    width: 100%;
+    height: 322px;
+    margin-top: 82px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .background {
+      position: absolute;
+      left: 60px;
+    }
+
+    .breadcrumbs-menu-wrapper {
+      display: flex;
+      flex-direction: column;
+      border-bottom: 2px solid $black;
+      margin-bottom: 64px;
+      padding-bottom: 20px;
+      padding-left: 390px;
+
+      .breadcrumbs-menu {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+
+        .title {
+          font-family: "Josefin Sans";
+          font-weight: 400;
+          font-size: 80px;
+          line-height: 100%;
+        }
+
+        .breadcrumbs {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 100%;
+          display: flex;
+          gap: 12px;
+          height: 24px;
+          align-items: center;
+
+          .line {
+            height: 15px;
+            width: 2px;
+            background: $black;
+          }
+
+          a {
+            text-decoration: none;
+            color: $black;
+
+            &:hover {
+              color: $pink;
+            }
+          }
+
+          .current-page {
+            color: $pink;
+          }
+        }
+      }
+    }
+  }
+}

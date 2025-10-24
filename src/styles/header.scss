@@ -1,0 +1,146 @@
+@import "./variables";
+
+.header-menu-1 {
+  margin: 50px 60px 0 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-side {
+  display: flex;
+  gap: 65px;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+// бургер
+
+.burger-menu {
+  .burger-checkbox {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  .burger {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: none;
+    background: transparent;
+    width: 22px;
+    height: 14px;
+
+    &::before,
+    &::after {
+      content: "";
+      left: 0;
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 2px;
+      border-radius: 10px;
+      background: $black;
+    }
+
+    &::before {
+      top: 0;
+      box-shadow: 0 11px 0 $black;
+      transition: box-shadow 0.3s 0.15s, top 0.3s 0.15s, transform 0.3s;
+    }
+
+    &::after {
+      bottom: 6.5px;
+      transition: bottom 0.3s 0.15s, transform 0.3s;
+    }
+  }
+
+  .burger-checkbox:checked + .burger {
+    &::before {
+      top: 2px;
+      transform: rotate(45deg);
+      box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
+      transition: box-shadow 0.15s, top 0.3s, transform 0.3s 0.15s;
+    }
+
+    &::after {
+      bottom: 10px;
+      transform: rotate(-45deg);
+      transition: bottom 0.3s, transform 0.3s 0.15s;
+    }
+  }
+}
+
+.logo {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
+.menu-item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+
+  .arrow-hover {
+    display: none;
+  }
+
+  &:hover,
+  &.active {
+    color: $pink;
+
+    .arrow-default {
+      display: none;
+    }
+
+    .arrow-hover {
+      display: inline-block;
+    }
+  }
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-icon {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  .counter {
+    background: $black;
+    color: $white;
+    padding: 3px 7px;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+  }
+}
+
+.login-button,
+.login-message {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.login-button:hover {
+  color: $pink;
+  cursor: pointer;
+}

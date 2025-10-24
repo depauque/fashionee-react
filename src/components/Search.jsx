@@ -1,4 +1,4 @@
-import "../styles/shop.css";
+import "../styles/shop.scss";
 import search from "../assets/icons/search.svg";
 
 function Search({ handleSearch }) {
