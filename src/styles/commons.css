@@ -1,0 +1,132 @@
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container .input {
+  border: none;
+  border-bottom: 1px solid rgba(68, 68, 68, 20%);
+  width: 100%;
+  color: rgba(68, 68, 68, 50%);
+  outline: none;
+  padding: 0 0 15px 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.container .button-wrapper {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  max-width: 240px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.container .button-wrapper .button {
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  border: none;
+  background: rgba(0, 0, 0, 1);
+  padding: 17px 74px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+.container .button-wrapper .vertical-line {
+  width: 2px;
+  height: 50px;
+  background: black;
+}
+
+.container .price {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.container .price .current-price {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.container .price .old-price {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: line-through;
+  line-height: 100%;
+  color: #444444;
+}
+
+.container .custom-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.container .custom-list li {
+  color: rgba(68, 68, 68, 1);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.container .custom-list li.active {
+  color: rgba(255, 142, 142, 1);
+}
+
+.container .custom-list li::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-image: url("../assets/icons/square.svg");
+}
+
+.container .find-us .find-us-text {
+  margin: 0 0 20px 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 170%;
+}
+
+.container .find-us .find-us-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.container .find-us .find-us-links .find-us-link a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+  color: #444444;
+}
+
+.container .find-us .find-us-links .line {
+  border-bottom: 1px solid #444444;
+  height: 1px;
+  width: 10px;
+}
+
+img.dotted {
+  opacity: 0.5;
+}
