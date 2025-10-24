@@ -70,7 +70,7 @@ function App() {
 
   return (
     <AuthContext.Provider value={{ isLoggedIn, setAuth }}>
-      <Router>
+      <Router basename="/fashionee-react">
         <Header
           favCount={favorites.length}
           cartCount={cart.length}
