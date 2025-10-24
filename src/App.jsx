@@ -14,7 +14,7 @@ import "./styles/commons.css";
 
 function App() {
   const [currentPage, setCurrentPage] = useState(
-    window.location.pathname === "/"
+    window.location.pathname === "/fashionee-react/"
       ? "Home"
       : window.location.pathname.slice(1).charAt(0).toUpperCase() +
           window.location.pathname.slice(2)
